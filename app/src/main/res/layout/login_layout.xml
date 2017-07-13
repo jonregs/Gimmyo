@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageView"
+        android:layout_width="232dp"
+        android:layout_height="139dp"
+        app:srcCompat="@drawable/gimmyo_logo" />
+
+    <ScrollView
+        android:layout_marginTop="40dp"
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/email"
+                    android:layout_width="@dimen/login_page_text_field"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/password"
+                    android:layout_width="@dimen/login_page_text_field"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/email_sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="@dimen/login_page_text_field"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/action_sign_in"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/facebook_sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="@dimen/login_page_text_field"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/action_facebook_sign_in_button"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/google_sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="@dimen/login_page_text_field"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/action_google_sign_in_button"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
