@@ -6,4 +6,7 @@
     <color name="signup_bg_color">#ffffff</color>
     <color name="text_color_signup_page">#000000</color>
     <color name="darker_text_color_signup_page">#808080</color>
+
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
 </resources>
