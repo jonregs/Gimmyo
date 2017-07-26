@@ -13,4 +13,14 @@
     <string name="googleplus_sign_in">Google plus sign in</string>
     <string name="twitter_sign_in">Twitter sign in</string>
 
+    <!-- Strings related to sign up -->
+    <string name="sign_in_text">Sign in</string>
+    <string name="or_sign_in_with">or sign in with:</string>
+    <string name="terms_conditions_sign_up">By signing up you agree with our terms and conditions</string>
+    <string name="sign_up_button">Signup</string>
+    <string name="password_hint_text">Password</string>
+    <string name="email_hint_text">Email address</string>
+    <string name="username_hint_text">Username</string>
+    <string name="create_new_account_label">Create new account</string>
+
 </resources>

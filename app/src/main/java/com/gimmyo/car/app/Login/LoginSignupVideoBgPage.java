@@ -19,7 +19,6 @@ import com.gimmyo.car.app.R;
 public class LoginSignupVideoBgPage extends AppCompatActivity implements View.OnClickListener{
 
     private VideoView mVideoView;
-    //Button gimmyoImageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,23 +47,6 @@ public class LoginSignupVideoBgPage extends AppCompatActivity implements View.On
         signupButton.setOnClickListener(this);
 
     }
-
-    /*public void addListenerOnButton() {
-
-        gimmyoImageButton = (Button) findViewById(R.id.gimmyLoginButton);
-        gimmyoImageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(LoginSignupVideoBgPage.this, Login.class);
-                startActivity(intent);
-
-                gimmyoImageButton.setFocusableInTouchMode(false);
-                gimmyoImageButton.setFocusable(false);
-            }
-        });
-
-    }*/
 
     @Override
     public void onClick(View view) {
