@@ -103,7 +103,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                     });
                     progressDialog.dismiss();
                 }
-            }, 2000);
+            }, 1000);
         }
     }
 
