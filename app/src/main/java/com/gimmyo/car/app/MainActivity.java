@@ -1,39 +1,36 @@
 package com.gimmyo.car.app;
 
+import android.app.Application;
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import com.gimmyo.car.app.Login.LoginSignupVideoBgPage;
+import com.parse.Parse;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Application {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public void onCreate() {
+        super.onCreate();
+        //Enable Local Data Store.
+        Parse.enableLocalDatastore(this);
 
-        WebView myWebView = (WebView) findViewById(R.id.webview);
-        myWebView.loadUrl("http://www.truecar.com");
-        myWebView.setWebViewClient(new WebViewClient());
+        /*
+         Parse Login Credentials
+         URL: http://ec2-18-220-7-92.us-east-2.compute.amazonaws.com/apps/My%20Bitnami%20Parse%20API/browser/_User
+         Login to Parse Server
+         username: user
+         password: j8yiiNOCeurK
+        */
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-    }
+        Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())
+                .applicationId("8812ae35cb75fe6d52f018ec0a8add5339b999e8")
+                .clientKey("dc0190dd5f7ca905b849a6ab18d292c4602dec93")
+                .server("http://ec2-18-220-7-92.us-east-2.compute.amazonaws.com:80/parse/")
+                .build()
+        );
 
-    public void onBackPressed(){
-        super.onBackPressed();
-        this.finish();
+        Intent startApp = new Intent(MainActivity.this, LoginSignupVideoBgPage.class);
+        startActivity(startApp);
     }
 }
