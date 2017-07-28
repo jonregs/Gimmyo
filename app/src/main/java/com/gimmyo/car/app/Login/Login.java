@@ -10,10 +10,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.gimmyo.car.app.BidBoard;
 import com.gimmyo.car.app.MainActivity;
 import com.gimmyo.car.app.R;
 import com.parse.GetCallback;
-import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
@@ -31,24 +32,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_layout);
-
-        //Enable Local Data Store.
-        Parse.enableLocalDatastore(this);
-
-        /*
-         Parse Login Credentials
-         URL: http://ec2-18-220-7-92.us-east-2.compute.amazonaws.com/apps/My%20Bitnami%20Parse%20API/browser/_User
-         Login to Parse Server
-         username: user
-         password: j8yiiNOCeurK
-        */
-
-        Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())
-                .applicationId("8812ae35cb75fe6d52f018ec0a8add5339b999e8")
-                .clientKey("dc0190dd5f7ca905b849a6ab18d292c4602dec93")
-                .server("http://ec2-18-220-7-92.us-east-2.compute.amazonaws.com:80/parse/")
-                .build()
-        );
 
         Button signinButton = (Button) findViewById(R.id.login_to_gimmyo);
         signinButton.setOnClickListener(this);
@@ -115,8 +98,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     private boolean confirmLoginAccount(String username, String password) {
         if (username.equals(userAccount) && password.equals(passwordAccount)) {
             Log.v(TAG, "success logging in");
-            Intent successLogin = new Intent(Login.this, MainActivity.class);
+            Intent successLogin = new Intent(Login.this, BidBoard.class);
             startActivity(successLogin);
+            finish();
             return true;
         }
         else {
@@ -151,5 +135,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             password.setError(null);
         }
         return valid;
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
     }
 }
