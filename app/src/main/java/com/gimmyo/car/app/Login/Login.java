@@ -11,8 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.gimmyo.car.app.BidBoard;
-import com.gimmyo.car.app.MainActivity;
+import com.gimmyo.car.app.BidBoard.BidBoard;
 import com.gimmyo.car.app.R;
 import com.parse.GetCallback;
 import com.parse.ParseException;

@@ -9,4 +9,6 @@
 
     <color name="iron">#CCCCCC</color>
     <color name="white">#FFFFFF</color>
+
+    <color name="blue_grey_800_50p">#E237474F</color>
 </resources>
