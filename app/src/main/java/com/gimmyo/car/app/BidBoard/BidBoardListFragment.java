@@ -7,7 +7,8 @@ import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -63,9 +64,14 @@ public class BidBoardListFragment extends Fragment {
         final View view = inflater.inflate(R.layout.fragment_rage_comic_list, container, false);
 
         final Activity activity = getActivity();
-        final RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
-        recyclerView.setLayoutManager(new GridLayoutManager(activity, 2));
+        final RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(activity));
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(new BidBoardListAdapter(activity));
+
+//        recyclerView.setLayoutManager(new GridLayoutManager(activity, 2));
+//        recyclerView.setAdapter(new BidBoardListAdapter(activity));
 
         return view;
     }
@@ -117,8 +123,8 @@ public class BidBoardListFragment extends Fragment {
             super(itemView);
 
             //Get references to image and name.
-            mImageView = (ImageView) itemView.findViewById(R.id.comic_image);
-            mTextView = (TextView) itemView.findViewById(R.id.name);
+            mImageView = itemView.findViewById(R.id.bidboard_card_image);
+            mTextView = itemView.findViewById(R.id.bidboard_card_text);
         }
 
         private void setData(int imageResId, String name) {
