@@ -9,7 +9,7 @@ import com.gimmyo.car.app.R;
  * Created by jonegalado on 7/27/17, Gimmyo Project.
  */
 
-public class BidBoard extends AppCompatActivity implements BidBoardListFragment.OnBidBoardItemSelected {
+public class BidBoardHome extends AppCompatActivity implements BidBoardListFragment.OnBidBoardItemSelected {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

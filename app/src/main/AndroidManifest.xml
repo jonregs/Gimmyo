@@ -25,7 +25,7 @@
 
         <activity android:name=".Login.Login"/>
         <activity android:name=".Login.Signup"/>
-        <activity android:name=".BidBoard.BidBoard"/>
+        <activity android:name=".BidBoard.BidBoardHome"/>
 
     </application>
 
