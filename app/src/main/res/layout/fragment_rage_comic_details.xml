@@ -51,7 +51,7 @@
         android:adjustViewBounds="true"
         android:contentDescription="@null"
         android:scaleType="centerCrop"
-        android:src="@drawable/freddie_mercury"/>
+        android:src="@drawable/toyota_tacoma"/>
 
     <TextView
         android:id="@+id/description"

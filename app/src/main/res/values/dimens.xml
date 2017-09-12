@@ -17,4 +17,10 @@
     <dimen name="rage_comic_description_margin_left">32dp</dimen>
     <dimen name="rage_comic_description_margin_right">24dp</dimen>
     <dimen name="rage_comic_description_margin_bottom">16dp</dimen>
+
+
+    <!--dimensions icon on card-->
+    <dimen name="icon_width">4dp</dimen>
+    <dimen name="icon_height">4dp</dimen>
+    <dimen name="icon_padding">4dp</dimen>
 </resources>
