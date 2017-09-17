@@ -61,7 +61,7 @@ public class BidBoardListFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.fragment_rage_comic_list, container, false);
+        final View view = inflater.inflate(R.layout.bidboard_offer_list, container, false);
 
         final Activity activity = getActivity();
         final RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
@@ -86,7 +86,7 @@ public class BidBoardListFragment extends Fragment {
 
         @Override
         public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            return new ViewHolder(mLayoutInflater.inflate(R.layout.recycler_item_rage_comic, parent, false));
+            return new ViewHolder(mLayoutInflater.inflate(R.layout.recycler_bidboard_offer, parent, false));
         }
 
         @Override

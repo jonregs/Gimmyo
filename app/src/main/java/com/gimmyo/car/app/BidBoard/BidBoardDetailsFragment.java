@@ -39,7 +39,7 @@ public class BidBoardDetailsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.fragment_rage_comic_details, container, false);
+        final View view = inflater.inflate(R.layout.bidboard_offer_details, container, false);
         final ImageView imageView = (ImageView) view.findViewById(R.id.comic_image);
         final TextView nameTextView = (TextView) view.findViewById(R.id.name);
         final TextView descriptionTextView = (TextView) view.findViewById(R.id.description);
