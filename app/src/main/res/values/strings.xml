@@ -23,4 +23,17 @@
     <string name="username_hint_text">Username</string>
     <string name="create_new_account_label">Create new account</string>
 
+    <!-- Strings related to Bidboard Details Fragment -->
+    <string name="description_format">%1$s\n\n%2$s</string>
+
+    <!-- Strings related to card design for rendering -->
+    <string name="action_explore">Create new account</string>
+    <string name="action_share">Create new account</string>
+    <string name="card_content">Create new account</string>
+    <string name="card_title">Create new account</string>
+
+    <!--Strings for bottom navigation bar-->
+    <string name="tab_1">Green</string>
+    <string name="tab_2">Red</string>
+    <string name="tab_3">Blue</string>
 </resources>

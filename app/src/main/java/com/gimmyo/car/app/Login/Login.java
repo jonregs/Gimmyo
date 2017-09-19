@@ -11,8 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.gimmyo.car.app.BidBoard;
-import com.gimmyo.car.app.MainActivity;
+import com.gimmyo.car.app.BidBoard.BidBoardHome;
 import com.gimmyo.car.app.R;
 import com.parse.GetCallback;
 import com.parse.ParseException;
@@ -98,7 +97,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     private boolean confirmLoginAccount(String username, String password) {
         if (username.equals(userAccount) && password.equals(passwordAccount)) {
             Log.v(TAG, "success logging in");
-            Intent successLogin = new Intent(Login.this, BidBoard.class);
+            Intent successLogin = new Intent(Login.this, BidBoardHome.class);
             startActivity(successLogin);
             finish();
             return true;
