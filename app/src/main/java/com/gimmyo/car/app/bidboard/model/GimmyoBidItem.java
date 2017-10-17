@@ -1,4 +1,4 @@
-package com.gimmyo.car.app.BidBoard.model;
+package com.gimmyo.car.app.bidboard.model;
 
 /**
  * Created by Jon on 9/23/2017.

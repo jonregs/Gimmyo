@@ -2,9 +2,8 @@ package com.gimmyo.car.app;
 
 import android.app.Application;
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import com.gimmyo.car.app.Login.LoginSignupVideoBgPage;
+
+import com.gimmyo.car.app.login.LoginSignupVideoBgPage;
 import com.parse.Parse;
 
 public class MainActivity extends Application {

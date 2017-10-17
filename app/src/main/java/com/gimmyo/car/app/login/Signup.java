@@ -1,4 +1,4 @@
-package com.gimmyo.car.app.Login;
+package com.gimmyo.car.app.login;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

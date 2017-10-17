@@ -1,4 +1,4 @@
-package com.gimmyo.car.app.BottomNavigationBar;
+package com.gimmyo.car.app.bottom_navigation_bar;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;

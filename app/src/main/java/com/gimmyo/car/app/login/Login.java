@@ -1,4 +1,4 @@
-package com.gimmyo.car.app.Login;
+package com.gimmyo.car.app.login;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.gimmyo.car.app.BidBoard.BidBoardHome;
+import com.gimmyo.car.app.bidboard.BidBoardHome;
 import com.gimmyo.car.app.R;
 import com.parse.GetCallback;
 import com.parse.ParseException;

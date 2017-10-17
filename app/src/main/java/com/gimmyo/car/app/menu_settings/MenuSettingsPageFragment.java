@@ -1,4 +1,4 @@
-package com.gimmyo.car.app.Profile;
+package com.gimmyo.car.app.menu_settings;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,9 +12,9 @@ import com.gimmyo.car.app.R;
  * Created by Jon on 9/6/2017.
  */
 
-public class ProfilePageMainFragment extends Fragment {
-    public static ProfilePageMainFragment newInstance() {
-        ProfilePageMainFragment fragment = new ProfilePageMainFragment();
+public class MenuSettingsPageFragment extends Fragment {
+    public static MenuSettingsPageFragment newInstance() {
+        MenuSettingsPageFragment fragment = new MenuSettingsPageFragment();
         return fragment;
     }
 
@@ -26,6 +26,6 @@ public class ProfilePageMainFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.profile_main_fragment, container, false);
+        return inflater.inflate(R.layout.menu_settings_main_fragment, container, false);
     }
 }
